@@ -8,7 +8,7 @@ using System;
 
 namespace Exercice9
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -22,7 +22,7 @@ namespace Exercice9
         }
 
         // Méthode pour la saisie de la note avec contrôle
-        static int SaisirNote()
+        public static int SaisirNote()
         {
             int note;
 
@@ -36,13 +36,13 @@ namespace Exercice9
         }
 
         // Méthode pour vérifier si la note est valide (comprise entre 0 et 20)
-        static bool EstNoteValide(int note)
+        public static bool EstNoteValide(int note)
         {
             return note >= 0 && note <= 20;
         }
 
         // Méthode pour l'affichage du résultat
-        static void AfficherResultat(int note)
+        public static void AfficherResultat(int note)
         {
             Console.WriteLine("Note saisie : " + note);
         }
